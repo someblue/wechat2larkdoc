@@ -81,6 +81,22 @@ GOPROXY=https://goproxy.cn,direct go build -o wechat2md
 
 Ensure `~/.local/bin` is on `PATH`.
 
+## Installing this Skill into Hermes
+
+The repository contains the skill at `skills/wechat2larkdoc/SKILL.md`. To make Hermes discover it locally, link the skill directory into the Hermes skills tree:
+
+```bash
+src="$HOME/workspace/src/github.com/someblue/wechat2larkdoc/skills/wechat2larkdoc"
+dst_dir="$HOME/.hermes/skills/productivity"
+dst="$dst_dir/wechat2larkdoc"
+
+[ -d "$src" ] || { echo "missing source: $src"; exit 1; }
+mkdir -p "$dst_dir"
+[ -e "$dst" ] || [ -L "$dst" ] || ln -s "$src" "$dst"
+```
+
+Verify discovery from Hermes with `skill_view("wechat2larkdoc")` or `skills_list(category="productivity")`. If the skill was just installed while a long-running Hermes gateway is active, start a new conversation or restart/reload the gateway before expecting automatic triggering.
+
 ## Basic usage
 
 Run directly from GitHub:
