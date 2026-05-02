@@ -87,6 +87,16 @@ Options:
 6. Overwrite the Lark doc with `lark-cli docs +update --mode overwrite`.
 7. Optionally grant edit permission to a target Feishu user/chat.
 
+## Agent Skill
+
+This repository includes a skills.sh-compatible Skill at:
+
+```text
+skills/wechat2larkdoc/SKILL.md
+```
+
+Agents can use it as operational guidance for installing prerequisites, running `wechat2larkdoc`, verifying inline images, and troubleshooting `wechat2md` / `lark-cli` failures.
+
 ## Output
 
 On success, the CLI prints JSON:
