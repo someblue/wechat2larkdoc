@@ -1,0 +1,45 @@
+{
+  "name": "wechat2larkdoc",
+  "version": "1.0.0",
+  "description": "Convert WeChat official account articles into Lark docs by orchestrating wechat2md and lark-cli.",
+  "main": "./dist/cli.js",
+  "type": "module",
+  "bin": {
+    "wechat2larkdoc": "./bin/wechat2larkdoc.cjs"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "start": "node bin/wechat2larkdoc.cjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/someblue/wechat2larkdoc.git"
+  },
+  "keywords": [
+    "wechat",
+    "weixin",
+    "lark",
+    "feishu",
+    "document"
+  ],
+  "author": "someblue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/someblue/wechat2larkdoc/issues"
+  },
+  "homepage": "https://github.com/someblue/wechat2larkdoc#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
