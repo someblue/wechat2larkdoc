@@ -1,0 +1,9 @@
+{
+  "knowledgeBaseName": "R的知识库",
+  "statePath": "~/.hermes/state/ima-wechat-to-lark/state.json",
+  "baseToken": "",
+  "tableId": "",
+  "summaryDocId": "",
+  "larkIdentity": "bot",
+  "workDir": "/tmp/ima-wechat-to-lark"
+}
