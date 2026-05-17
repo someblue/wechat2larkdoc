@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "knowledgeBaseName": "R的知识库",
+  "base": {
+    "token": "",
+    "tableId": ""
+  },
+  "summaryDoc": {
+    "docId": ""
+  },
+  "results": [
+    {
+      "title": "",
+      "mediaId": "",
+      "sourceUrl": "",
+      "status": "synced",
+      "docId": "",
+      "docUrl": "",
+      "imageCount": 0,
+      "summary": "",
+      "error": "",
+      "syncedAt": ""
+    }
+  ],
+  "lastRun": {
+    "startedAt": "",
+    "finishedAt": "",
+    "foundWeChatCount": 0,
+    "successCount": 0,
+    "failureCount": 0,
+    "skippedNonWeChatTitles": []
+  }
+}
